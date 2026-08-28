@@ -39,6 +39,26 @@ Some of the strongest numerical relationships with sale price were:
 - Garage Area
 - Total Basement Area
 
+## Visualizations
+
+### Sale Price by Kitchen Quality
+
+The boxplot shows a clear relationship between kitchen quality and sale price. Homes with higher kitchen-quality ratings generally have higher median sale prices.
+
+![Sale Price by Kitchen Quality](images/kitchen_quality_boxplot.png)
+
+### Correlation Heatmap
+
+The correlation heatmap highlights the numerical variables most strongly associated with `SalePrice`. `OverallQual` and `GrLivArea` show some of the strongest positive relationships with sale price.
+
+![Correlation Heatmap](images/correlation_heatmap.png)
+
+### Actual vs Fitted Values
+
+The actual vs fitted plot compares observed sale prices with the values predicted by the final regression model. The strong positive relationship indicates that the model captures the overall pricing trend well, although some larger errors remain for higher-priced properties.
+
+![Actual vs Fitted Values](images/actual_vs_fitted.png)
+
 ## Regression Models
 
 Three regression models were compared:
@@ -68,11 +88,15 @@ The full model achieved the strongest overall performance with an R² of approxi
 ```text
 House-Price-Analytics/
 ├── notebooks/
-│   └── house_price_Analysis.ipynb
+│   └── house_price_analysis.ipynb
 ├── outputs/
 │   └── final_predictions.csv
 ├── report/
-│   └── House_Price_Analysis_Report.pdf
+│   └── house_price_analysis_report.pdf
+├── images/
+│   ├── kitchen_quality_boxplot.png
+│   ├── correlation_heatmap.png
+│   └── actual_vs_fitted.png
 ├── README.md
 ├── .gitignore
 └── LICENSE
